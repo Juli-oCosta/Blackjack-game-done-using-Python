@@ -1,20 +1,21 @@
-# Alterações:
+# Changes:
 
-# No Blackjack, o dealer deve comprar cartas até que sua mão alcance pelo menos 17.
-# Portanto, uma abordagem comum é ocultar a mão do dealer até que o jogador decida "stand".
-# Assim, você mantém a tensão e a incerteza sobre a mão do dealer.
+# In a blackjack game, the dealer must keep drawing cards until his hand value is at least 17.
+# Therefore, a common approach is to hide the dealer's hand until the player decides to "Stand".
+# This keeps the tension and uncertainty regarding the dealer's hand.
 
-# Sugestões
+# Suggestions:
 
-# Remova a Exibição da Mão do Dealer Durante a Jogada:
-# Apenas mostre a primeira carta oculta (indicada como "?") e a segunda carta.
+# Remove Dealer's Hand Display During Play:
+# Only show the first hidden card (hidden as '?') and second card.
 
-# Revele a Mão do Dealer Após o Jogador Optar por "Stand": Quando o jogador escolher "stand",
-# você pode calcular a mão do dealer e exibi-la.
+# Reveal dealer's full hand only after the player's option is "Stand"
+# The dealer's hand value can then be calculated and displayed.
 
-# Considerações:
+# About the Ace:
 
-# Se um Ás puder ser 11 sem estourar o total (21), ele vale 11; caso contrário, ele vale 1.
+# If an Ace is able to be worth 11, without busting the total (21), then it's worthy 11.
+# Otherwise, it's worthy 1.
 
 import random
 
