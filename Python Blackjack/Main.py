@@ -1,5 +1,5 @@
 # ----------------------------------------------------------------------------------------------------------------
-# Needed hanges according to the game rules:
+# Needed changes according to the game rules:
 
 # In a blackjack game, the dealer must keep drawing cards until his hand value is at least 17.
 # Therefore, a common approach is to hide the dealer's hand until the player decides to "Stand".
