@@ -33,7 +33,7 @@ for card in cards:
         card_values[card] = int(card)
 
 # 🍀Starting the game and deciding each other their respective initial hands
-print("🍀Welcome to our Blackjack game🍀\n")
+print("🍀 Welcome to our Blackjack game 🍀\n")
 
 player_cards_choice = random.sample(cards, 2)
 dealer_cards_choice = random.sample(cards, 2)
@@ -87,7 +87,7 @@ def game_choice(player_hand, dealer_hand):
             print(f"Dealer's hand: {', '.join(dealer_hand_display)}")
 
             if player_score > 21:
-                print("\n🔴You lost🔴")
+                print("\n🔴 You lost 🔴")
                 print(f"Your final hand: {', '.join(player_hand)}")
                 print(f"Dealer's final hand: {', '.join(dealer_hand)}")
                 break
@@ -102,19 +102,19 @@ def game_choice(player_hand, dealer_hand):
             print(f"Dealer's score: {dealer_score}")
 
             if player_score > 21:
-                print("🔴You lost🔴")
+                print("🔴 You lost 🔴")
                 game_start = False
             elif player_score == 21 or player_score > dealer_score:
-                print("🍀You won🍀")
+                print("🍀 You won 🍀")
                 game_start = False
             elif player_score < dealer_score and dealer_score > 21:
-                print("🍀You won🍀")
+                print("🍀 You won 🍀")
                 game_start = False
             elif player_score == dealer_score and player_score <= 21:
-                print("🃏It's a draw🃏")
+                print("🃏 It's a draw 🃏")
                 game_start = False
             else:
-                print("🔴Dealer won🔴")
+                print("🔴 Dealer won 🔴")
                 game_start = False
 
                 break
