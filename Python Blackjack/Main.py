@@ -22,7 +22,6 @@ import random
 # 🍀Defining the game cards and it's values
 cards = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'K', 'Q']
 card_values = {}
-game_start = True
 
 for card in cards:
     if card == 'A':
@@ -31,6 +30,8 @@ for card in cards:
         card_values[card] = 10
     else:
         card_values[card] = int(card)
+        
+game_start = True
 
 # 🍀Starting the game and deciding each other their respective initial hands
 print("🍀 Welcome to our Blackjack game 🍀\n")
