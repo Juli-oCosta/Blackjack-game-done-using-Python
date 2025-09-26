@@ -2,6 +2,7 @@
 # Needed changes according to the game rules:
 
 # In a blackjack game, the dealer must keep drawing cards until his hand value is at least 17.
+# The dealer may only draw new cards once the player hits 'stand'.
 # The dealer's hand remains partially hidden (showing only one card) while the player is still making choices.
 # Once the player chooses "Stand", the dealer reveals their full hand and continues drawing cards until reaching at least 17.
 # This keeps the tension and uncertainty regarding the dealer's final hand.
@@ -157,3 +158,4 @@ print(f"Dealer shows: {', '.join(dealer_initial_display)}")
 # Start the game loop
 if game_start:
     game_choice(player_hand, dealer_hand)
+
